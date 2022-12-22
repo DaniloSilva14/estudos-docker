@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "h8OGTXxfZnOnWViNBpazM8o3em7OMV8Lg8DujTSWh28=",
+  "Source": "APIDocker",
+  "BasePath": "_content/APIDocker",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,14 @@
+
+Para subir o container:
+docker-compose -f docker-compose.yml up -d
+
+Para derrubar o container:
+docker-compose -f docker-compose.yml down
+
+Quando der pau ou Para limpar cache BD:
+
+1 - apagar o banco de dados mysql do docker
+2 - docker-compose -f docker-compose.yml down
+3 - docker volume rm dockerbd_db-api-ef
+4 - docker-compose -f docker-compose.yml build --no-cache
+5 - docker-compose -f docker-compose.yml up -d

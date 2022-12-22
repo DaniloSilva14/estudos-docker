@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  db:
+    build: .
+    container_name: bd_codebit
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'ccab'
+      MYSQL_USER: 'domvs-user'
+      MYSQL_PASSWORD: 'Domvs@2022'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '3307:3306'
+    expose:
+      - '3307'
+    volumes:
+      - my-db:/var/lib/mysql
+    restart: always
+
+volumes:
+  my-db:
+    driver: local
+  

@@ -1,0 +1,27 @@
+- 'docker run nomeContainer'
+	docker run é responsável por executar um container em nosso host,
+	ele tenta roda um container local e depois tenta um container remoto
+	
+- 'docker ps' ou 'docker container ls'
+	lista os container em execução
+
+- 'docker ps -a' ou 'docker container ls -a' 
+	mostra todos os containers que existem no pc
+
+- 'docker stop idContainer' ou 'docker stop nomeContainer' 
+	ele para de rodar o container selecionado
+
+- 'docker start idContainer' ou 'docker start nomeContainer' 
+	ele para de rodar o container selecionado
+
+- 'docker exec idContainer Comando'
+	eu posso executar algum comando dentro do meu container
+
+- 'docker exec -it idContainer Comando'
+	executar algum comando dentro do meu container em modo interativo.
+	O I é de modo interativo, 
+	e o T é que eu quero acessar o tty, o terminal padrão desse container.
+
+- comando ctrl + d
+	sai de dentro do container
+

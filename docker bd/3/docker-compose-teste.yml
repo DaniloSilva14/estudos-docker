@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  db:
+    build: .
+    container_name: bd_teste
+    restart: always
+    environment:
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'pass'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '3310:3306'
+    expose:
+      - '3310'
+    volumes:
+      - bd_teste:/var/lib/mysql
+    restart: always
+
+  adminer:
+    image: adminer
+    restart: always
+    ports: 
+      - 8080:8080
+
+volumes:
+  bd_teste:
+    driver: local
+  
